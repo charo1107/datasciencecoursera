@@ -10,17 +10,13 @@ The purpose of this project is to demonstrate your ability to collect, work with
 * Here are the data for the project: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Steps preformed to clean the data
+Project
 -------------------------------------------------
- 1. Read X_train.txt, y_train.txt and subject_train.txt to *TrainData*, *TrainLabel* and *TrainSubject*.       
- 2. Read X_test.txt, y_test.txt and subject_test.txt to *TestData*, *TestLabel* and *Testsubject*.  
- 3. Concatenate *TestData* to *TrainData* to get, *Data*; concatenate *TestLabel* to *TrainLabel* to get, *Label*; concatenate *TestSubject* to *TrainSubject* to get, *Subject*.  
- 4. Read the features.txt file to a variable called *Features*. Extract the mean and standard deviation. 
- 5. Remove the "()" and "-" symbols in the names, make the first letter of "mean" and "std" a capital letter "M" and "S" respectively.   
- 6. Read the activity_labels.txt file to a variable called *Activity*.  
- 7. Clean the activity names in the second column of *Activity*. Make all names to lower cases.  
- 8. Transform the values of *Label* according to the *Activity* data frame.  
- 9. Combine the *Subject*, *Label* and *Data* by column to get, *DataClean*. Name the first two columns, "subject" and "activity".   
- 10. Write the *DataClean* to "data_clean.txt".  
- 11. Generate a second data set with the average of each measurement for each activity and each subject. Calculate the mean of each measurement with the corresponding combination.
- 12. Write the *x* from the calculation out to "data_finish.txt". 
+
+You should create one R script called run_analysis.R that does the following.
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
