@@ -1,4 +1,4 @@
-/ Exploratory Data Analysis Project 1
+Exploratory Data Analysis Project 1
 =================================================
 Author: Rosario Escobedo (https://github.com/charo1107)
 
